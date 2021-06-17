@@ -9,7 +9,6 @@
     android:orientation="vertical"
     android:layout_gravity="center_vertical"
     tools:context=".MainActivity">
-    <!-- 1. Assign an id to TextView in the layout:-->
     <TextView
         android:id="@+id/result_text"
         android:layout_width="wrap_content"
@@ -17,7 +16,6 @@
         android:layout_gravity="center_horizontal"
         android:text="1"
         android:textSize="30sp"/>
-    <!--1. Set button’s id in the activity_main.xml layout file: -->
     <Button
         android:id="@+id/roll_button"
         android:layout_width="wrap_content"
