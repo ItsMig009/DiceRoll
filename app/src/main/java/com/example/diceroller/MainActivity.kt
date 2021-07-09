@@ -4,16 +4,21 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
-import android.widget.TextView
 import kotlin.random.Random
 
 // AppCompatActivity makes you app available the largest number of devices and users possible.
 class MainActivity : AppCompatActivity() {
+    // Tells compiler it will be initialized before being accessed.
+    lateinit var diceImage: ImageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main) // inflates and draws layout to the screen.
         val rollButton: Button = findViewById(R.id.roll_button)
         rollButton.text = getString(R.string.replace)
+        // findViewById executes once, instead of for each rollDice call
+        // uses field instead of local variable withing rollDice method
+        diceImage = findViewById(R.id.dice_image) // searches view hierarchy
         rollButton.setOnClickListener{
             rollDice()
         }
@@ -28,8 +33,7 @@ class MainActivity : AppCompatActivity() {
             5 -> R.drawable.dice_5
             else -> R.drawable.dice_6
         }
-        // initialize ImageView with a dice image
-        val diceImage: ImageView = findViewById(R.id.dice_image)
+
         // update based on drawable resource result
         diceImage.setImageResource(drawableResource)
     }
