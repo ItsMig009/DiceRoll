@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import kotlin.random.Random
-
+// Added Summary
 // AppCompatActivity makes you app available the largest number of devices and users possible.
 class MainActivity : AppCompatActivity() {
     // Tells compiler it will be initialized before being accessed.
