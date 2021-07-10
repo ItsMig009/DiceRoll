@@ -9,13 +9,18 @@
     android:orientation="vertical"
     android:layout_gravity="center_vertical"
     tools:context=".MainActivity">
+    <!-- Added tools attribute to change the default namespace.
+         This gives us a preview of the image we are working with-->
+    <!-- Image appears while I am designing the app but not in my actual app-->
     <ImageView
         android:contentDescription="@string/default_dice_image"
         android:id="@+id/dice_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/empty_dice" />
+        android:src="@drawable/empty_dice"
+        tools:src="@drawable/dice_1"
+        />
     <Button
         android:id="@+id/roll_button"
         android:layout_width="wrap_content"
