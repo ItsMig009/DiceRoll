@@ -12,6 +12,7 @@
     <!-- Added tools attribute to change the default namespace.
          This gives us a preview of the image we are working with-->
     <!-- Image appears while I am designing the app but not in my actual app-->
+
     <ImageView
         android:contentDescription="@string/default_dice_image"
         android:id="@+id/dice_image"
