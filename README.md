@@ -33,3 +33,11 @@ build.gradle (Module:app)
 Example: This application contains one module named app. In case we want to add our own libraries
 or support Android Wear, we can add our own.
 
+Recap:
+- Setup Android Studio (IDE)
+- Setup device or emulator
+- Basic app structure (XML Layouts, Activities)
+- Layouts, Activities and the process of Layout Inflation
+- Interactions 
+- Gradle and Compatibility concepts.
+
