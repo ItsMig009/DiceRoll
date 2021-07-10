@@ -1,6 +1,7 @@
 package com.example.diceroller
 
 import androidx.appcompat.app.AppCompatActivity
+// androidx - Jetpack compatibility libraries.
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
